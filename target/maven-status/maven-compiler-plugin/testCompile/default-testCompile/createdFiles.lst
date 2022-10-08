@@ -1,0 +1,7 @@
+org\craigslist\StepDefination\HousingPage_StepDefinition.class
+org\craigslist\Utility\TestData.class
+org\craigslist\Utility\CommonFunctions.class
+org\craigslist\DataManagement\PropertyFileReader.class
+org\craigslist\Utility\BaseClass.class
+org\craigslist\PageObjects\Housingpage_PO.class
+org\craigslist\TestRunner\craigslistTestRunner.class

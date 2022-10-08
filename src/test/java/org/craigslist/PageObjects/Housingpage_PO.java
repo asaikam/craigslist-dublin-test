@@ -15,7 +15,7 @@ public class Housingpage_PO {
     CommonFunctions cf = new CommonFunctions();
     TestData td = new TestData();
 
-    @FindBy(xpath = "//a[contains(@href, '/search/hhh') and @class='hhh']")
+    @FindBy(className = "hhh")
     WebElement housingPage;
 
     @FindBy(xpath = "//h4[@class = 'ban nearby']/preceding::li/div/span[2]/span[@class = 'result-price']")
@@ -33,10 +33,10 @@ public class Housingpage_PO {
     @FindBy(xpath = "//div[@class = 'search-sort']/div/ul/li/a[@data-selection ='pricedsc']")
     WebElement priceDsc;
 
-    @FindBy(xpath = "//input[@placeholder = 'search housing']")
+    @FindBy(name = "query")
     WebElement searchTextbox;
 
-    @FindBy(xpath = "//button[@type = 'submit' and @class='searchbtn changed_input clickme']")
+    @FindBy(className = "searchbtn")
     WebElement searchButton;
 
     //Constructor that will be automatically called as soon as the object of the class is created

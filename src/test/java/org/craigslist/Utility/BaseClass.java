@@ -6,7 +6,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
-import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 public class BaseClass

@@ -1,6 +1,5 @@
 package org.craigslist.Utility;
 
-
 import java.util.*;
 
 public class TestData {
@@ -22,16 +21,6 @@ public class TestData {
         return Values;
     }
 
-/*    public List<String> tDefaultDropdownValues(){
-        List Values = new ArrayList();
-        Values.add("upcoming");
-        Values.add("newest");
-        Values.add("oldest");
-        Values.add("£ → £££");
-        Values.add("£££ → £");
-        return Values;
-    }*/
-
     public List<String> tSearchDropdownValues(){
         List Values = new ArrayList();
         Values.add("upcoming");
@@ -42,4 +31,14 @@ public class TestData {
         Values.add("£££ → £");
         return Values;
     }
+
+    /*    public List<String> tDefaultDropdownValues(){
+        List Values = new ArrayList();
+        Values.add("upcoming");
+        Values.add("newest");
+        Values.add("oldest");
+        Values.add("£ → £££");
+        Values.add("£££ → £");
+        return Values;
+    }*/
 }

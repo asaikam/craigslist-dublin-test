@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: org.craigslist.TestRunner.craigslistTestRunner
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 8.217 s <<< FAILURE! - in org.craigslist.TestRunner.craigslistTestRunner
+Craigslist housing page sorting functionality validation.housing page default sorting dropdown values  Time elapsed: 0.316 s  <<< FAILURE!
+java.lang.AssertionError: expected:<[newest, £ → £££, £££ → £]> but was:<[upcoming, newest, oldest, £ → £££, £££ → £]>
+
