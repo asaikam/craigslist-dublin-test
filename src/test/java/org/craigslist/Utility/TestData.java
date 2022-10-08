@@ -1,17 +1,9 @@
 package org.craigslist.Utility;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class TestData {
-
-    public static final String tPAGE_TITLE = "craigslist: Dublin jobs, apartments, for sale, services, community, and events";
-
-    public static final List<String> tDropdownList = Arrays.asList("£ → £££", "£££ → £", "newest");
 
     public static final String tBeforeSorting = " before sorting ";
 
@@ -19,5 +11,35 @@ public class TestData {
 
     public static final String tAfterSorting_priceDsc = " after sorting Dsc: ";
 
+    public static final String tSearchData = "dublin";
 
+    //Test Case Fail testcase data
+    public List<String> tDefaultDropdownValues(){
+        List Values = new ArrayList();
+        Values.add("newest");
+        Values.add("£ → £££");
+        Values.add("£££ → £");
+        return Values;
+    }
+
+/*    public List<String> tDefaultDropdownValues(){
+        List Values = new ArrayList();
+        Values.add("upcoming");
+        Values.add("newest");
+        Values.add("oldest");
+        Values.add("£ → £££");
+        Values.add("£££ → £");
+        return Values;
+    }*/
+
+    public List<String> tSearchDropdownValues(){
+        List Values = new ArrayList();
+        Values.add("upcoming");
+        Values.add("newest");
+        Values.add("oldest");
+        Values.add("relevant");
+        Values.add("£ → £££");
+        Values.add("£££ → £");
+        return Values;
+    }
 }

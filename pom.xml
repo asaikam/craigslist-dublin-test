@@ -6,21 +6,24 @@
 
     <dependencies>
 
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>3.141.59</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-chrome-driver</artifactId>
+            <version>3.141.59</version>
+        </dependency>
+
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
             <version>7.5.0</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-junit</artifactId>
@@ -31,19 +34,21 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.11</version>
+            <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
+<!--        <dependency>-->
+<!--            <groupId>net.masterthought</groupId>-->
+<!--            <artifactId>cucumber-reporting</artifactId>-->
+<!--            <version>5.4.0</version>-->
+<!--        </dependency>-->
 
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
         <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-chrome-driver</artifactId>
-            <version>3.141.59</version>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
         </dependency>
-
 
     </dependencies>
     <properties>
@@ -58,35 +63,34 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M5</version>
                 <configuration>
-                    <test>LearningTestRunner.java</test>
+                    <test>craigslistTestRunner.java</test>
+                    <skipTests>false</skipTests>
+                    <testFailureIgnore>true</testFailureIgnore>
+                    <forkMode>once</forkMode>
                 </configuration>
             </plugin>
             <plugin>
                 <groupId>net.masterthought</groupId>
                 <artifactId>maven-cucumber-reporting</artifactId>
-                <version>5.7.1</version>
+                <version>5.4.0</version>
                 <executions>
                     <execution>
                         <id>execution</id>
-                        <phase>test</phase>
+                        <phase>verify</phase>
                         <goals>
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <projectName>CucumberReport</projectName>
-                            <outputDirectory>${project.build.directory}/site/cucumber-reports</outputDirectory>
-                            <!-- <cucumberOutput>${project.build.directory}/cucumber.json</cucumberOutput> -->
+                            <projectName>Craigslist Dublin Test</projectName>
+                            <outputDirectory>${project.build.directory}</outputDirectory>
+                            <inputDirectory>${project.build.directory}</inputDirectory>
                             <jsonFiles>
-                                <param>${project.build.directory}/cucumber.json</param>
+                                <param>**/cucumber*.json</param>
                             </jsonFiles>
-                            <!-- <parallelTesting>false</parallelTesting> -->
-                            <buildNumber>1</buildNumber>
-                            <checkBuildResult>false</checkBuildResult>
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
         </plugins>
     </build>
-
 </project>

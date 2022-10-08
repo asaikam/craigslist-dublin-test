@@ -9,7 +9,6 @@ public class PropertyFileReader {
 
     public static Properties fn_ReadPropertyFile() {
         try {
-            //reading values from Property File
             prop = new Properties();
             FileInputStream ip = new FileInputStream("src/test/resources/Config.Properties");
             prop.load(ip);
@@ -18,6 +17,5 @@ public class PropertyFileReader {
         }
         return prop;
     }
-
 }
 

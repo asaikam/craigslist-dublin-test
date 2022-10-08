@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CommonFunctions {
+public class CommonFunctions extends BaseClass{
 
     public List<String> Sorting(List<WebElement> SortingPrice, String sorting ){
         List<String> SortingPriceList = new ArrayList<>();
