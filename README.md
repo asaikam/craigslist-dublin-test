@@ -5,9 +5,9 @@
 
  **1. Language: Java**
 
- **2. Testing framework: Testng**
+ **2. Testing framework: Junit**
 
- **3. BDD framework: Cucumber jvm**
+ **3. BDD framework: Cucumber**
 
  **4. Automation tool: Selenium webdriver**
 
