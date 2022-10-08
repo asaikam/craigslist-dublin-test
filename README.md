@@ -25,6 +25,6 @@
 
 # <u>**Test Report:**</u>
 
-**Once test execution is completed, go to target/cucumber-html-reports folder and open overview-features.html file**
+**Once test execution is completed, navigate to target/cucumber-html-reports folder and open overview-features.html file**
 
 ![img_2.png](img_2.png)
