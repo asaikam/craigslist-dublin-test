@@ -1,7 +1,7 @@
 
-#Craigslist Dublin Test Framework
+**Craigslist Dublin Test Framework**
 
-##Tools and Technologies:
+**Tools and Technologies:**
 
  **1. Language: Java**
 
@@ -15,15 +15,16 @@
 
  **6. Reporting: cucumber reporting**
 
-##Running Tests:
+**##Running Tests:**
+
 **$ mvn clean install**
 
 
-##Project Tree:
+**Project Tree:**
 
 ![img_1.png](img_1.png)
 
-##Test Report:
+**Test Report:**
 
 **Once test execution is completed, go to target/cucumber-html-reports folder and open overview-features.html file**
 
